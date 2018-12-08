@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="954.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.pidev.tn.gui.FXMLclientController">
+   <children>
+      <Label layoutX="196.0" layoutY="4.0" text="Bienvenue Dans L'espace Client" textAlignment="CENTER" textFill="#110101">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TabPane layoutY="65.0" prefHeight="465.0" prefWidth="954.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="c" onSelectionChanged="#onCarteFideliteselected" text="Espace fidelite">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="transformer" layoutX="427.0" layoutY="314.0" mnemonicParsing="false" onAction="#ontransformerclicked" text="Transformer" />
+                        <TableView fx:id="tabfidelite" layoutX="144.0" layoutY="46.0" prefHeight="246.0" prefWidth="666.0">
+                          <columns>
+                            <TableColumn fx:id="tidcarte" prefWidth="123.0" text="Id carte" />
+                              <TableColumn fx:id="tnom" prefWidth="186.0" text="Nom Boutique" />
+                            <TableColumn fx:id="tnbrpts" prefWidth="191.0" text="Nbre de points" />
+                              <TableColumn fx:id="tbenifice" prefWidth="168.0" text="Bénifice" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="uhjj" layoutX="26.0" layoutY="21.0" mnemonicParsing="false" onAction="#click" text="Button" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="gerercompte_client" onSelectionChanged="#on_gerercompte_client_selected" text="Gerer compte">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="validermodification" layoutX="494.0" layoutY="339.0" mnemonicParsing="false" onAction="#onvalidermodificationclicked" prefHeight="31.0" prefWidth="169.0" text="Valider" />
+                        <Label layoutX="105.0" layoutY="266.0" text="Cin" />
+                        <Label layoutX="110.0" layoutY="113.0" text="Email" />
+                        <Label layoutX="97.0" layoutY="192.0" text="Password" />
+                        <Label layoutX="450.0" layoutY="123.0" text="Login" />
+                        <Label layoutX="442.0" layoutY="39.0" text="Prenom" />
+                        <Label layoutX="116.0" layoutY="39.0" text="Nom" />
+                        <TextField fx:id="cin" layoutX="102.0" layoutY="293.0" />
+                        <TextField fx:id="email" layoutX="96.0" layoutY="136.0" />
+                        <TextField fx:id="password" layoutX="96.0" layoutY="220.0" />
+                        <TextField fx:id="login" layoutX="450.0" layoutY="151.0" />
+                        <TextField fx:id="prenom" layoutX="442.0" layoutY="69.0" />
+                        <TextField fx:id="nom" layoutX="102.0" layoutY="60.0" />
+                        <TextField layoutX="442.0" layoutY="229.0" />
+                        <Label layoutX="450.0" layoutY="197.0" text="Confirmer password" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="813.0" layoutY="18.0" mnemonicParsing="false" onAction="#handledeconnexionclient" text="deconnexion" />
+   </children>
+</AnchorPane>

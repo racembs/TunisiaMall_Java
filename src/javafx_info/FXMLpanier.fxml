@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.pidev.tn.gui.FXMLpanierController">
+   <children>
+      <Button fx:id="buttvalider" layoutX="615.0" layoutY="270.0" mnemonicParsing="false" onAction="#onvaliderclick" prefHeight="39.0" prefWidth="143.0" text="valider mon panier" />
+      <Button fx:id="butsup" layoutX="243.0" layoutY="404.0" mnemonicParsing="false" onAction="#onsupprimeclik" prefHeight="39.0" prefWidth="123.0" text="supprimer un article" textFill="#e41212" />
+      <Button layoutX="17.0" layoutY="21.0" mnemonicParsing="false" onAction="#onexitcliqued" text="exit" />
+      <TableView fx:id="pd" layoutX="122.0" layoutY="67.0" prefHeight="297.0" prefWidth="403.0" style="-fx-background-color: #64B5F6; -fx-border-color: #EEEE; -fx-border-width: 2px;">
+        <columns>
+          <TableColumn fx:id="tbaricle" prefWidth="75.0" text="article" />
+          <TableColumn fx:id="tbprix" prefWidth="106.0" text="prix" />
+            <TableColumn fx:id="tbquantite" prefWidth="122.0" text="quantite" />
+            <TableColumn fx:id="tbprixtotal" prefWidth="99.0" text="prix total" />
+        </columns>
+      </TableView>
+      <Button fx:id="butsupcommande" layoutX="104.0" layoutY="404.0" mnemonicParsing="false" onAction="#onsupprimercommande" prefHeight="39.0" prefWidth="123.0" style="-fx-background-color: #CB4100;" text="supprimer la commande" />
+      <JFXTextField fx:id="Total" editable="false" focusColor="#174ef2" layoutX="650.0" layoutY="75.0" prefHeight="25.0" prefWidth="123.0" />
+      <JFXTextField fx:id="montantlivrason" editable="false" layoutX="650.0" layoutY="167.0" prefHeight="25.0" prefWidth="123.0" />
+      <JFXTextField fx:id="txtmontanttotal" editable="false" layoutX="655.0" layoutY="215.0" prefHeight="25.0" prefWidth="114.0" />
+      <Button fx:id="modifier" layoutX="389.0" layoutY="404.0" mnemonicParsing="false" onAction="#onmodifierclicked" prefHeight="39.0" prefWidth="114.0" text="modifier" textFill="#d44242" />
+      <Label layoutX="538.0" layoutY="79.0" prefHeight="17.0" prefWidth="77.0" text="Total :" />
+      <Label fx:id="txtmontantliv" layoutX="525.0" layoutY="171.0" prefHeight="17.0" prefWidth="114.0" text="montant livraison:" />
+      <Label fx:id="txttotal" layoutX="535.0" layoutY="215.0" prefHeight="25.0" prefWidth="95.0" text="montant Total:" />
+      <JFXCheckBox fx:id="livraisonok" layoutX="695.0" layoutY="126.0" onAction="#onlivraisonok" text="livraison" />
+      <JFXCheckBox fx:id="sanslivraison" layoutX="573.0" layoutY="126.0" onAction="#sanslivraisonclicked" text="sans livraison" />
+      <JFXTextField fx:id="quantite" layoutX="605.0" layoutY="379.0" prefHeight="25.0" prefWidth="69.0" />
+      <Button fx:id="btnvaliderquant" layoutX="691.0" layoutY="372.0" mnemonicParsing="false" onAction="#onvaliderquantiteclicked" prefHeight="39.0" prefWidth="77.0" text="valider" />
+      <Label fx:id="txtqauantite" layoutX="483.0" layoutY="356.0" prefHeight="46.0" prefWidth="123.0" text="quantité a modifier" />
+      <Button fx:id="btnannulerquantite" layoutX="621.0" layoutY="434.0" mnemonicParsing="false" onAction="#onannulermodifqaunatiteclicked" prefHeight="39.0" prefWidth="77.0" text="annuler" />
+      <JFXTextField fx:id="find" layoutX="203.0" layoutY="21.0" onKeyReleased="#onfindput" prefHeight="25.0" prefWidth="154.0" />
+      <TableView fx:id="tabcommande" layoutX="8.0" layoutY="138.0" onMouseReleased="#jjjjjj" prefHeight="156.0" prefWidth="114.0">
+         <columns>
+            <TableColumn fx:id="cmd" prefWidth="165.0" text="C1" />
+         </columns>
+      </TableView>
+      <Label fx:id="commandeactuelle" layoutX="14.0" layoutY="73.0" prefHeight="46.0" prefWidth="77.0" />
+   </children>
+</AnchorPane>

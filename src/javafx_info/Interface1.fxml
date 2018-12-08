@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="582.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_info.Interface1Controller">
+   <children>
+      <TabPane fx:id="admintabpane" layoutX="159.0" layoutY="120.0" prefHeight="463.0" prefWidth="725.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="home" text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                 
+                     <children>
+      <TableView fx:id="tablePromoClient" layoutX="6.0" layoutY="133.0" onMouseClicked="#clickItemPromo" prefHeight="202.0" prefWidth="571.0">
+        <columns>
+          <TableColumn fx:id="nomPromo" prefWidth="54.0" text="Nom" />
+          <TableColumn fx:id="descripPromo" prefWidth="92.0" text="Description" />
+            <TableColumn fx:id="dateExpiration" prefWidth="112.0" text="Date d'Expiration" />
+            <TableColumn fx:id="prixPromo" prefWidth="61.0" text="Prix" />
+            <TableColumn fx:id="quantiteDispo" prefWidth="128.0" text="Quantité Disponible " />
+            <TableColumn fx:id="enseignePromo" prefWidth="122.0" text="Enseigne" />
+        </columns>
+      </TableView>
+      <Text layoutX="238.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les Promotions">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="#07c3ed" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+      </Text>
+      <Button fx:id="acheterPromo" layoutX="440.0" layoutY="343.0" mnemonicParsing="false" onAction="#onacheterPromo" text="S'inscrire a ce Promo" />
+      <Text fill="#d0071e" layoutX="14.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selectionner la promotion pour consulter l'image " textAlignment="CENTER" />
+      <ImageView fx:id="imagePromo" fitHeight="144.0" fitWidth="132.0" layoutX="579.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXComboBox fx:id="qtiteSouhaiteCombo" editable="true" focusColor="#e81b00" layoutX="241.0" layoutY="345.0" promptText="Quantité Désirée" unFocusColor="RED" />
+   </children>
+                  
+                  
+                  
+                     
+                     
+                     
+                     
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="statistique" text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="264.0" layoutY="202.0" text="Statistique" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tabgerercompte" text="Untitled Tab">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="378.0" layoutY="172.0" text="gerer compte" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tabptsfidelite" text="Untitled Tab">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="378.0" layoutY="172.0" text="pts fidelite" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabpromotion" text="Untitled Tab">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="378.0" layoutY="172.0" text="promotion" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabparking" text="Untitled Tab">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="378.0" layoutY="172.0" text="parking" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView layoutX="38.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/homebtn.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="38.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/stat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="33.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/promo.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="38.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/team.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="39.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/parking.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="282.0" fitWidth="893.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/tunisiamall.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="17.0" layoutY="258.0" onAction="#onstatistiqueselected" prefWidth="180.0" text="Statistique" textFill="#21a448" />
+      <JFXButton layoutX="6.0" layoutY="213.0" onAction="#onhomeclicked" prefWidth="180.0" text="Home" textFill="#1d9030" />
+      <JFXButton fx:id="btngerercompte" layoutX="11.0" layoutY="303.0" onAction="#ongerercompteelected" prefWidth="180.0" text="        Gérer Compte" textFill="#21a448" />
+      <JFXButton fx:id="ptsfidelite" layoutX="11.0" layoutY="346.0" onAction="#onptsfideliteselected" prefWidth="180.0" text="            Point de fidelite" textFill="#21a448" />
+      <ImageView fitHeight="31.0" fitWidth="24.0" layoutX="36.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/dollar.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnpromotion" layoutX="6.0" layoutY="390.0" onAction="#onpromotionselected" prefWidth="180.0" text="      Promotions" textFill="#21a448" />
+      <JFXButton fx:id="btnparking" layoutX="6.0" layoutY="429.0" onAction="#onparkingselected" prefWidth="180.0" text="Parking" textFill="#21a448" />
+   </children>
+</AnchorPane>

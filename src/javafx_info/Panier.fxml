@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="582.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_info.PanierController">
+   <children>
+      <TabPane fx:id="admintabpane" layoutX="159.0" layoutY="120.0" prefHeight="463.0" prefWidth="725.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="home" text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+      <Button fx:id="buttvalider" layoutX="615.0" layoutY="270.0" mnemonicParsing="false" onAction="#onvaliderclick" prefHeight="39.0" prefWidth="143.0" text="valider mon panier" />
+      <Button fx:id="butsup" layoutX="243.0" layoutY="404.0" mnemonicParsing="false" onAction="#onsupprimeclik" prefHeight="39.0" prefWidth="123.0" text="supprimer un article" textFill="#e41212" />
+      <Button layoutX="17.0" layoutY="21.0" mnemonicParsing="false" onAction="#onexitcliqued" text="exit" />
+      <TableView fx:id="pd" layoutX="122.0" layoutY="67.0" prefHeight="297.0" prefWidth="403.0" style="-fx-background-color: #64B5F6; -fx-border-color: #EEEE; -fx-border-width: 2px;">
+        <columns>
+          <TableColumn fx:id="tbaricle" prefWidth="75.0" text="article" />
+          <TableColumn fx:id="tbprix" prefWidth="106.0" text="prix" />
+            <TableColumn fx:id="tbquantite" prefWidth="122.0" text="quantite" />
+            <TableColumn fx:id="tbprixtotal" prefWidth="99.0" text="prix total" />
+        </columns>
+      </TableView>
+      <Button fx:id="butsupcommande" layoutX="104.0" layoutY="404.0" mnemonicParsing="false" onAction="#onsupprimercommande" prefHeight="39.0" prefWidth="123.0" style="-fx-background-color: #CB4100;" text="supprimer la commande" />
+      <JFXTextField fx:id="Total" editable="false" focusColor="#174ef2" layoutX="650.0" layoutY="75.0" prefHeight="25.0" prefWidth="123.0" />
+      <JFXTextField fx:id="montantlivrason" editable="false" layoutX="650.0" layoutY="167.0" prefHeight="25.0" prefWidth="123.0" />
+      <JFXTextField fx:id="txtmontanttotal" editable="false" layoutX="655.0" layoutY="215.0" prefHeight="25.0" prefWidth="114.0" />
+      <Button fx:id="modifier" layoutX="389.0" layoutY="404.0" mnemonicParsing="false" onAction="#onmodifierclicked" prefHeight="39.0" prefWidth="114.0" text="modifier" textFill="#d44242" />
+      <Label layoutX="538.0" layoutY="79.0" prefHeight="17.0" prefWidth="77.0" text="Total :" />
+      <Label fx:id="txtmontantliv" layoutX="525.0" layoutY="171.0" prefHeight="17.0" prefWidth="114.0" text="montant livraison:" />
+      <Label fx:id="txttotal" layoutX="535.0" layoutY="215.0" prefHeight="25.0" prefWidth="95.0" text="montant Total:" />
+      <JFXCheckBox fx:id="livraisonok" layoutX="695.0" layoutY="126.0" onAction="#onlivraisonok" text="livraison" />
+      <JFXCheckBox fx:id="sanslivraison" layoutX="573.0" layoutY="126.0" onAction="#sanslivraisonclicked" text="sans livraison" />
+      <JFXTextField fx:id="quantite" layoutX="605.0" layoutY="379.0" prefHeight="25.0" prefWidth="69.0" />
+      <Button fx:id="btnvaliderquant" layoutX="691.0" layoutY="372.0" mnemonicParsing="false" onAction="#onvaliderquantiteclicked" prefHeight="39.0" prefWidth="77.0" text="valider" />
+      <Label fx:id="txtqauantite" layoutX="483.0" layoutY="356.0" prefHeight="46.0" prefWidth="123.0" text="quantité a modifier" />
+      <Button fx:id="btnannulerquantite" layoutX="621.0" layoutY="434.0" mnemonicParsing="false" onAction="#onannulermodifqaunatiteclicked" prefHeight="39.0" prefWidth="77.0" text="annuler" />
+      <JFXTextField fx:id="find" layoutX="203.0" layoutY="21.0" onKeyReleased="#onfindput" prefHeight="25.0" prefWidth="154.0" />
+      <TableView fx:id="tabcommande" layoutX="8.0" layoutY="138.0" onMouseReleased="#jjjjjj" prefHeight="156.0" prefWidth="114.0">
+         <columns>
+            <TableColumn fx:id="cmd" prefWidth="165.0" text="C1" />
+         </columns>
+      </TableView>
+      <Label fx:id="commandeactuelle" layoutX="14.0" layoutY="73.0" prefHeight="46.0" prefWidth="77.0" />
+   </children>
+                  
+                  
+                  
+                     
+                     
+                     
+                     
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="statistique" text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="264.0" layoutY="202.0" text="Statistique" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tabgerercompte" text="Untitled Tab">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="378.0" layoutY="172.0" text="gerer compte" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tabptsfidelite" text="Untitled Tab">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="378.0" layoutY="172.0" text="pts fidelite" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabpromotion" text="Untitled Tab">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="378.0" layoutY="172.0" text="promotion" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabparking" text="Untitled Tab">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="378.0" layoutY="172.0" text="parking" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView layoutX="38.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/homebtn.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="38.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/stat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="33.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/promo.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="38.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/team.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="39.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/parking.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="282.0" fitWidth="893.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/tunisiamall.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="17.0" layoutY="258.0" onAction="#onstatistiqueselected" prefWidth="180.0" text="Statistique" textFill="#21a448" />
+      <JFXButton layoutX="6.0" layoutY="213.0" onAction="#onhomeclicked" prefWidth="180.0" text="Home" textFill="#1d9030" />
+      <JFXButton fx:id="btngerercompte" layoutX="11.0" layoutY="303.0" onAction="#ongerercompteelected" prefWidth="180.0" text="        Gérer Compte" textFill="#21a448" />
+      <JFXButton fx:id="ptsfidelite" layoutX="11.0" layoutY="346.0" onAction="#onptsfideliteselected" prefWidth="180.0" text="            Point de fidelite" textFill="#21a448" />
+      <ImageView fitHeight="31.0" fitWidth="24.0" layoutX="36.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/dollar.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnpromotion" layoutX="6.0" layoutY="390.0" onAction="#onpromotionselected" prefWidth="180.0" text="      Promotions" textFill="#21a448" />
+      <JFXButton fx:id="btnparking" layoutX="6.0" layoutY="429.0" onAction="#onparkingselected" prefWidth="180.0" text="Parking" textFill="#21a448" />
+   </children>
+</AnchorPane>
+

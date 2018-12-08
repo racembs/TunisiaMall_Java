@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.pidev.tn.gui.FXMLCalculController">
+   <children>
+      <Button fx:id="NbBE" layoutX="87.0" layoutY="94.0" mnemonicParsing="false" onAction="#Nbenseignes" prefHeight="25.0" prefWidth="162.0" text="Nombre d'Enseigne" />
+      <Button fx:id="NbBP" layoutX="87.0" layoutY="150.0" mnemonicParsing="false" onAction="#Nbproduits" prefHeight="25.0" prefWidth="162.0" text="Nombre de Produits" />
+      <Button fx:id="NbBClt" layoutX="87.0" layoutY="212.0" mnemonicParsing="false" onAction="#Nbclients" prefHeight="25.0" prefWidth="162.0" text="Nombre de Clients" />
+      <Button fx:id="NbBC" layoutX="87.0" layoutY="271.0" mnemonicParsing="false" onAction="#Nbcommandes" prefHeight="25.0" prefWidth="162.0" text="Nombre de Commandes" />
+      <Label fx:id="NbE" layoutX="270.0" layoutY="94.0" prefHeight="25.0" prefWidth="97.0" />
+      <Label fx:id="NbPL" layoutX="270.0" layoutY="150.0" prefHeight="25.0" prefWidth="97.0" />
+      <Label fx:id="NbCltL" layoutX="270.0" layoutY="212.0" prefHeight="25.0" prefWidth="97.0" />
+      <Label fx:id="NbCL" layoutX="270.0" layoutY="271.0" prefHeight="25.0" prefWidth="97.0" />
+   </children>
+</AnchorPane>

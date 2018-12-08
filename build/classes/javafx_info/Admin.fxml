@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_info.AdminController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-6.0" layoutY="-8.0" prefHeight="582.0" prefWidth="884.0">
+         <children>
+            <TabPane fx:id="admintabpane" layoutX="159.0" layoutY="120.0" prefHeight="463.0" prefWidth="725.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab fx:id="home" text="home">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <MediaView fx:id="mediaTM" fitHeight="300.0" fitWidth="450.0" layoutX="124.0" layoutY="56.0" />
+                              <JFXButton layoutX="615.0" layoutY="362.0" text="Voir Plus.." textFill="#237963" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="TabGererClient" text="GererClient">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="264.0" layoutY="202.0" text="Statistique" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tabgererpersonnel" text="Gere Personnel">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="378.0" layoutY="172.0" text="gerer compte" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="taboffreemploi" text="Untitled Tab">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="378.0" layoutY="172.0" text="pts fidelite" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tabopromotion" text="Untitled Tab">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="378.0" layoutY="172.0" text="promotion" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tabgererenseigne" text="Untitled Tab">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="378.0" layoutY="172.0" text="parking" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tabgererenseigne1" text="Untitled Tab">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="378.0" layoutY="172.0" text="parking" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tabStatistique" text="Untitled Tab">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="378.0" layoutY="172.0" text="Statistique" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+            <ImageView layoutX="38.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/homebtn.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="81.0" fitWidth="24.0" layoutX="38.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/community-icon-13.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="33.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/promo.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="38.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/team.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="39.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/building.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="282.0" fitWidth="893.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/tunisiamall.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="17.0" layoutY="258.0" onAction="#onGererClientByAdminClicked" prefWidth="180.0" text="   Gérer Client" textFill="#21a448" />
+            <JFXButton layoutX="6.0" layoutY="213.0" onAction="#onHomeFromAdminclicked" prefWidth="180.0" text="Home" textFill="#1d9030" />
+            <JFXButton fx:id="btngerercompte" layoutX="11.0" layoutY="303.0" onAction="#onGererPersonnelClicked" prefWidth="180.0" text="             Gérer Personnel" textFill="#21a448" />
+            <JFXButton fx:id="ptsfidelite" layoutX="11.0" layoutY="346.0" onAction="#onOfffreEmploiClicked" prefWidth="180.0" text="           Offre d'emploi" textFill="#21a448" />
+            <ImageView fitHeight="31.0" fitWidth="24.0" layoutX="36.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/dollar.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnpromotion" layoutX="6.0" layoutY="390.0" onAction="#onPromotionAdminClicked" prefWidth="180.0" text="      Promotions" textFill="#21a448" />
+            <JFXButton fx:id="btnparking" layoutX="6.0" layoutY="429.0" onAction="#onGererEnseigneClicked" prefWidth="180.0" text="           Gérer Enseigne" textFill="#21a448" />
+            <JFXButton fx:id="btnStatistique" layoutX="6.0" layoutY="467.0" onAction="#onStatistiqueClicked" prefWidth="180.0" text="     Statistique" textFill="#21a448" />
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="38.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/stat.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

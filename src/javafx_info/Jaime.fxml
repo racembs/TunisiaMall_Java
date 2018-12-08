@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="218.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_info.JaimeController">
+   <children>
+      <Pane fx:id="pane_pub" prefHeight="209.0" prefWidth="680.0" style="-fx-background-color: #ccdefc;">
+         <children>
+            <Pane layoutX="27.0" layoutY="12.0" prefHeight="23.0" prefWidth="154.0" style="-fx-background-color: #809fff; -fx-border-color: #809fff;">
+               <children>
+                  <Label id="lb_prenom" fx:id="lb_prenom" layoutX="11.0" layoutY="3.0" prefHeight="19.0" prefWidth="43.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label id="lb_nom" fx:id="lb_nom" layoutX="69.0" layoutY="2.0" prefHeight="19.0" prefWidth="60.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXButton id="bt_jaime" fx:id="bt_jaime" alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="56.0" layoutY="153.0" onAction="#OnActionjaime" prefHeight="33.0" prefWidth="68.0" ripplerFill="#5e5757" style="-fx-background-color: #809fff; -fx-background-radius: 20px;" text="J'aime">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label id="lb_date" fx:id="lb_date" layoutX="484.0" layoutY="15.0" prefHeight="17.0" prefWidth="174.0" />
+            <JFXTextArea id="tf_contenuemp" fx:id="tf_contenuemp" editable="false" layoutX="24.0" layoutY="45.0" maxWidth="641.0" minWidth="630.0" prefHeight="94.0" prefWidth="641.0" style="-fx-border-color: #809fff;" />
+            <Label id="lb_jaime" fx:id="lb_jaime" layoutX="27.0" layoutY="155.0" prefHeight="30.0" prefWidth="29.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label id="lb_commentaire" fx:id="lb_commentaire" layoutX="124.0" layoutY="159.0" prefHeight="20.0" prefWidth="31.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#afficherpanie" prefHeight="400.0" prefWidth="177.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.pidev.tn.gui.FXMLpanierafficherController">
+   <children>
+      <TableView fx:id="tabpanier" prefHeight="559.0" prefWidth="177.0">
+        <columns>
+          <TableColumn fx:id="article" prefWidth="84.0" text="article" />
+          <TableColumn fx:id="quantite" prefWidth="92.0" text="quantite" />
+        </columns>
+      </TableView>
+      <Pane prefHeight="0.0" prefWidth="177.0" />
+   </children>
+</VBox>

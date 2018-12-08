@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="582.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_info.PaiementController">
+   <children>
+      <TabPane fx:id="admintabpane" layoutX="159.0" layoutY="120.0" prefHeight="463.0" prefWidth="725.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="home" text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                
+                  
+                    <children>
+      <TextField fx:id="codecarte" layoutX="161.0" layoutY="166.0" prefHeight="25.0" prefWidth="155.0" />
+      <TextField fx:id="mdpcarte" layoutX="161.0" layoutY="221.0" prefHeight="25.0" prefWidth="155.0" />
+      <TextField fx:id="user" layoutX="197.0" layoutY="44.0" />
+      <Button fx:id="btnvalider" layoutX="245.0" layoutY="326.0" mnemonicParsing="false" onAction="#validerlepaiement" text="valider" />
+      <Button fx:id="btnexit" layoutX="540.0" layoutY="14.0" mnemonicParsing="false" onAction="#onExitclicked" text="Button" />
+      <Button fx:id="btnannuler" layoutX="335.0" layoutY="326.0" mnemonicParsing="false" onAction="#onannulerclick" text="Button" />
+      <Label fx:id="txtuser" layoutX="119.0" layoutY="31.0" prefHeight="34.0" prefWidth="94.0" text="username" />
+      <Label fx:id="ttxtpswd" layoutX="124.0" layoutY="81.0" prefHeight="25.0" prefWidth="83.0" text="password" />
+      <Label fx:id="txtcarte" layoutX="14.0" layoutY="166.0" prefHeight="25.0" prefWidth="140.0" text="code de la carte e-dinar :" />
+      <Label fx:id="txtmdpcarte" layoutX="14.0" layoutY="225.0" prefHeight="17.0" prefWidth="140.0" text="mot de pass de la carte :" />
+      <TextField fx:id="mdp1" layoutX="197.0" layoutY="81.0" />
+      <Label fx:id="txtTotal" layoutX="14.0" layoutY="248.0" prefHeight="43.0" prefWidth="183.0" text="le Total de votre Commande est :" />
+      <JFXTextField fx:id="Total" layoutX="198.0" layoutY="257.0" prefHeight="25.0" prefWidth="65.0" />
+      <CheckBox fx:id="edinar" layoutX="202.0" layoutY="140.0" mnemonicParsing="false" onAction="#onedinarclicked" text="e-dinar" />
+      <CheckBox fx:id="cartebancaire" layoutX="316.0" layoutY="140.0" mnemonicParsing="false" onAction="#oncartebancaireclick" text="Carte bancaire" />
+      <Label fx:id="typepaiement" layoutX="3.0" layoutY="136.0" prefHeight="25.0" prefWidth="162.0" text="choisir le type de payement :" />
+      <Label fx:id="montantvalide" layoutX="302.0" layoutY="261.0" text="votre montant est valide" textFill="#ee0606" />
+      <Label fx:id="txtverifusermdp" layoutX="357.0" layoutY="106.0" prefHeight="25.0" prefWidth="149.0" textFill="#e40808" />
+      <Label fx:id="txtverifcarte" layoutX="335.0" layoutY="183.0" prefHeight="34.0" prefWidth="140.0" />
+   </children>
+                  
+                     
+                     
+                     
+                     
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="statistique" text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="264.0" layoutY="202.0" text="Statistique" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tabgerercompte" text="Untitled Tab">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="378.0" layoutY="172.0" text="gerer compte" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tabptsfidelite" text="Untitled Tab">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="378.0" layoutY="172.0" text="pts fidelite" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabpromotion" text="Untitled Tab">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="378.0" layoutY="172.0" text="promotion" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabparking" text="Untitled Tab">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="378.0" layoutY="172.0" text="parking" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView layoutX="38.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/homebtn.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="38.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/stat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="33.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/promo.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="38.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/team.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="39.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/parking.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="282.0" fitWidth="893.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/tunisiamall.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="17.0" layoutY="258.0" onAction="#onstatistiqueselected" prefWidth="180.0" text="Statistique" textFill="#21a448" />
+      <JFXButton layoutX="6.0" layoutY="213.0" onAction="#onhomeclicked" prefWidth="180.0" text="Home" textFill="#1d9030" />
+      <JFXButton fx:id="btngerercompte" layoutX="11.0" layoutY="303.0" onAction="#ongerercompteelected" prefWidth="180.0" text="        Gérer Compte" textFill="#21a448" />
+      <JFXButton fx:id="ptsfidelite" layoutX="11.0" layoutY="346.0" onAction="#onptsfideliteselected" prefWidth="180.0" text="            Point de fidelite" textFill="#21a448" />
+      <ImageView fitHeight="31.0" fitWidth="24.0" layoutX="36.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/dollar.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnpromotion" layoutX="6.0" layoutY="390.0" onAction="#onpromotionselected" prefWidth="180.0" text="      Promotions" textFill="#21a448" />
+      <JFXButton fx:id="btnparking" layoutX="6.0" layoutY="429.0" onAction="#onparkingselected" prefWidth="180.0" text="Parking" textFill="#21a448" />
+   </children>
+</AnchorPane>

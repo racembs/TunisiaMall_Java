@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import com.jfoenix.validation.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onMouseDragEntered="#refreshtable" prefHeight="679.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.pidev.tn.gui.FXMLGestionCilentController">
+   <children>
+      <Button fx:id="btnBloquer" disable="true" layoutX="587.0" layoutY="519.0" mnemonicParsing="false" onAction="#onbtnBloquerClicked" prefHeight="37.0" prefWidth="175.0" text="Bloquer" />
+      <Button fx:id="actualiser" layoutX="117.0" layoutY="74.0" mnemonicParsing="false" onAction="#btnActualiserClicked" text="Actualiser" />
+      <Button fx:id="btnModifier" disable="true" layoutX="294.0" layoutY="521.0" mnemonicParsing="false" onAction="#on_update_client_from_table_clicked" prefHeight="77.0" prefWidth="176.0" text="modifier" />
+      <TextField fx:id="chercherbyid" layoutX="400.0" layoutY="74.0" onKeyReleased="#onchercher_dans_table_clicked" promptText="     chercher un client" />
+      <TableView fx:id="tableclient" layoutX="15.0" layoutY="134.0" onMouseClicked="#itemselected" prefHeight="360.0" prefWidth="990.0">
+         <columns>
+            <TableColumn fx:id="tnom" prefWidth="113.0" text="Nom" />
+            <TableColumn fx:id="tprenom" prefWidth="124.0" text="Prenom" />
+            <TableColumn fx:id="tcin" minWidth="0.0" prefWidth="177.0" text="cin" />
+            <TableColumn fx:id="temail" prefWidth="170.0" text="email" />
+            <TableColumn fx:id="tlogin" prefWidth="140.0" text="login" />
+            <TableColumn fx:id="tmdp" prefWidth="134.0" text="mdp" />
+            <TableColumn fx:id="tEtat" prefWidth="134.0" text="Etat" />
+         </columns>
+      </TableView>
+      <Button fx:id="btndebloquer" disable="true" layoutX="587.0" layoutY="556.0" mnemonicParsing="false" onAction="#onDeBloquerClicked" prefHeight="37.0" prefWidth="175.0" text="DeBloquer" />
+   </children>
+</AnchorPane>
